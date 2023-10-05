@@ -1,0 +1,6 @@
+title: "Arona Portfolio"
+description: "Ceci est mon portfolio en ligne."
+baseurl: ""
+url: "https://21arona.github.io" 
+baseurl: "/arona.portfolio/ceevee-1.0"
+theme: jekyll-theme-minimal
