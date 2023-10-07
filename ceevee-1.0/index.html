@@ -30,6 +30,16 @@
 	================================================== -->
 	<link rel="shortcut icon" href="favicon.png" >
 
+   <script src="index.js"></script>
+   <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("0Sbhxw2FFoF117qyp");
+   })();
+</script>
+
 </head>
 
 <body>
@@ -86,19 +96,19 @@
 
             <p>Je suis Papa Arona Diop, un passionné de développement web basé à Montreal. Avec une connaissance approfondie dans le développement de sites web réactifs et performants, je suis déterminé à créer des expériences en ligne a la hauteur. Maîtrisant les langages de programmation tels que HTML, CSS et JavaScript etc, ainsi que des frameworks comme React, je relève avec enthousiasme les défis techniques.
             </p>
-            <p style="font-weight: 600; color: aliceblue;">Je suis passionné par l'apprentissage continu et je reste à l'affût des dernières tendances technologiques.
-               Mon objectif est de contribuer à des projets innovants et de collaborer avec des esprits créatifs. Explorez mon portfolio pour voir mes réalisations et n'hésitez pas à me contacter pour discuter de futurs projets excitants.</p>
+            <p style="font-weight: 400; color: aliceblue;">Je suis passionné par l'apprentissage continu et je reste à l'affût des dernières tendances technologiques.
+               Mon objectif est de contribuer à des projets innovants et de collaborer avec des esprits créatifs afin d'aboutir à de futurs projets passionants.</p>
 
             <div class="row">
 
                <div class="columns contact-i">
 
-                  <h2>i Contact</h2>
-                  <p class="address">
-						   <span>PAPA ARONA DIOP</span><br>
+                  <h2>Informations</h2>
+                  <p style="font-weight:700;" class="address">
+						   <span >PAPA ARONA DIOP</span><br>
                      <span>Montreal,QC</span>
 						  <br>
-						   <span>(438)-227-5417</span><br>
+						   <span>(438) - 227 - 5417</span><br>
                      <span>aronadiop067@gmail.com</span>
 					   </p>
 
@@ -106,7 +116,7 @@
 
                <div class="columns download">
                   <p>
-                     <a href="images/CV PAPA ARONA DIOP (2) (6).docx" download="CV PAPA ARONA DIOP (2) (6).docx"class="button"><i class="fa fa-download"></i>Telecharger mon CV</a>
+                     <a href="images/CV PAPA ARONA DIOP (2) (6).docx" download="CV PAPA ARONA DIOP (2) (6).docx"class="button"><i class="fa fa-download"></i>Télécharger mon CV</a>
                   </p>
                </div>
 
@@ -195,7 +205,7 @@
 					   <li><span class="bar-expand photoshop"></span><em>JAVA</em></li>
                   <li><span class="bar-expand illustrator"></span><em>Javascript</em></li>
 						<li><span class="bar-expand wordpress"></span><em>React</em></li>
-						<li><span class="bar-expand html5"></span><em>PHP</em></li>
+						<li><span class="bar-expand html5"></span><em>Databases</em></li>
                   <li><span class="bar-expand jquery"></span><em>Android</em></li>
 					</ul>
 
@@ -394,7 +404,7 @@
 		      </div>
 
             <div class="link-box">
-               <a href="http://www.behance.net">Voir le Code</a>
+               <a href="https://github.com/21arona">Voir le Code</a>
 		         <a class="popup-modal-dismiss">Fermer ❌</a>
             </div>
 
@@ -410,7 +420,7 @@
 		      </div>
 
             <div class="link-box">
-               <a href="http://www.behance.net">Voir le Code</a>
+               <a href="https://github.com/21arona/Hotels">Voir le Code</a>
 		         <a class="popup-modal-dismiss">Fermer ❌</a>
             </div>
 
@@ -443,7 +453,7 @@
 		      </div>
 
             <div class="link-box">
-               <a href="http://www.behance.net">Voir le Code</a>
+               <a href="https://github.com/21arona/Jerseys-megastore">Voir le Code</a>
 		         <a class="popup-modal-dismiss">Fermer ❌</a>
             </div>
 
@@ -460,7 +470,7 @@
 		      </div>
 
             <div class="link-box">
-               <a href="http://www.behance.net">Voir le Code</a>
+               <a href="https://github.com/21arona/memory-game">Voir le Code</a>
 		         <a class="popup-modal-dismiss">Fermer ❌</a>
             </div>
 
@@ -476,7 +486,7 @@
 		      </div>
 
             <div class="link-box">
-               <a href="http://www.behance.net">Voir le Code</a>
+               <a href="https://github.com/21arona/Battleships">Voir le Code</a>
 		         <a class="popup-modal-dismiss">Fermer ❌</a>
             </div>
 
@@ -492,7 +502,7 @@
 		      </div>
 
             <div class="link-box">
-               <a href="http://www.behance.net">Voir le Code</a>
+               <a href="https://github.com/21arona/Gestion-de-contacts">Voir le Code</a>
 		         <a class="popup-modal-dismiss">Fermer ❌</a>
             </div>
 
@@ -552,21 +562,12 @@
                   </div>
 
                   <div>
-                     <button class="submit">Soumettre</button>
-                     <span id="image-loader">
-                        <img alt="" src="images/loader.gif">
-                     </span>
+                     <button class="submit" type="button" onclick="sendMail()">Soumettre</button>
                   </div>
 
 					</fieldset>
 				   </form> <!-- Form End -->
-
-               <!-- contact-warning -->
-               <div id="message-warning"> Erreur !</div>
-               <!-- contact-success -->
-				   <div id="message-success">
-                  <i class="fa fa-check"></i>Message bien envoyé. Merci! <br>
-				   </div>
+               <h3 id="successMessage" style="display: none; color: aliceblue;">Message bien envoyé !</h3>
 
             </div>
 
